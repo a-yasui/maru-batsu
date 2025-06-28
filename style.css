@@ -26,26 +26,58 @@ h1 {
     margin-bottom: 2rem;
 }
 
+.size-selector {
+    margin-bottom: 2rem;
+}
+
+.size-selector label {
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+}
+
+.size-selector select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.start-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start-btn:hover {
+    background-color: #2980b9;
+}
+
 .game-board {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
-    gap: 5px;
+    gap: 3px;
     margin: 0 auto 2rem;
     background-color: #333;
-    padding: 5px;
+    padding: 3px;
+    max-width: 90vw;
+    max-height: 70vh;
 }
 
 .cell {
     background-color: white;
     border: none;
     cursor: pointer;
-    font-size: 2.5rem;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s;
+    aspect-ratio: 1;
 }
 
 .cell:hover {
